@@ -24,8 +24,10 @@ public class KaprekarUtils {
 	 */
 	public static boolean isKaprekar(int n) {
 		
+		boolean result;
+		
 		if(n < 1); {
-			return false;
+			result = false;
 		} 
 		
 		//we use a long to accommodate larger squares
@@ -38,11 +40,11 @@ public class KaprekarUtils {
 			first = square / modulus;
 			second = square % modulus;
 			if(first > 0 &&
-			   first + second = n) {
-				return true;
+			   first + second == n) {
+				result = true;
 			}
 		}
-		return false;
+		return result;
 		
 	}
 	
